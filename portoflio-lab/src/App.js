@@ -1,25 +1,24 @@
-import logo from "./logo.svg";
-import "./scss/main.scss";
-import "./App.css";
+import React from "react";
+import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import Home from "./components/Home";
+import HomeThreeColumns from "./components/HomeThreeColumns";
+import HomeAboutUs from "./components/HomeAboutUs";
+import HomeWhoWeHelp from "./components/HomeWhoWeHelp";
+import HomeContact from "./components/HomeContact";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/o-co-chodzi" component={HomeThreeColumns} />
+        <Route path="/o-nas" component={HomeAboutUs} />
+        <Route path="/fundacja-i-organizacje" component={HomeWhoWeHelp} />
+        <Route path="/kontakt" component={HomeContact} />
+        <Route component={NotFound} />
+      </Switch>
+    </HashRouter>
   );
 }
 
