@@ -8,7 +8,7 @@ import SingleStep from "./SingleStep";
 import Button from "./Button";
 import { Link } from "react-router-dom";
 
-const HomeSimpleSteps = () => {
+const HomeSimpleSteps = ({ isLogged }) => {
   return (
     <section className="simple-steps" id="simple-steps">
       <h1 className="simple-steps-title">Wystarczą 4 proste kroki</h1>
@@ -38,7 +38,10 @@ const HomeSimpleSteps = () => {
         </div>
       </div>
 
-      <Link className="simple-steps-btn" to="oddaj-rzeczy">
+      <Link
+        className="simple-steps-btn"
+        to={isLogged ? "oddaj-rzeczy" : "logowanie"}
+      >
         <Button
           width="310px"
           height="120px"
@@ -50,7 +53,5 @@ const HomeSimpleSteps = () => {
     </section>
   );
 };
-
-//do buttona warunek isLogged
 
 export default HomeSimpleSteps;
