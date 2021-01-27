@@ -1,0 +1,40 @@
+.main-section {
+  height: calc(100vh - 167px);
+
+  &-img {
+    height: 964px;
+    position: absolute;
+    top: 0;
+    left: -500px;
+    z-index: -999;
+  }
+
+  &-content {
+    position: absolute;
+    top: 350px;
+    right: 300px;
+    width: 675px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &-title {
+    font-size: 38px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.decoration {
+  margin-top: 5px;
+  margin-left: calc(50%);
+  transform: translateX(-50%);
+  margin-bottom: 65px;
+}
