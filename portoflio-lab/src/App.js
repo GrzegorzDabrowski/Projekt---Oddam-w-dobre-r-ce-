@@ -1,24 +1,30 @@
-import React from "react";
-import { HashRouter, Route, Link, Switch } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./components/Home";
-import HomeThreeColumns from "./components/HomeThreeColumns";
-import HomeAboutUs from "./components/HomeAboutUs";
-import HomeWhoWeHelp from "./components/HomeWhoWeHelp";
-import HomeContact from "./components/HomeContact";
 import NotFound from "./components/NotFound";
+import Login from "./pages/Login";
+import Logout from "./pages/Logout";
+import Register from "./pages/Register";
 
 function App() {
+  const [user, setUser] = useState({});
+  const [isLogged, setIsLogged] = useState(false);
+
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/o-co-chodzi" component={HomeThreeColumns} />
-        <Route path="/o-nas" component={HomeAboutUs} />
-        <Route path="/fundacja-i-organizacje" component={HomeWhoWeHelp} />
-        <Route path="/kontakt" component={HomeContact} />
+        <Route exact path="/">
+          <Home user={user} isLogged={isLogged} setIsLogged={setIsLogged} />
+        </Route>
+        <Route path="/logowanie">
+          {isLogged ? <Redirect to="/" /> : <Login />}
+        </Route>
+        <Route path="/rejestracja" component={Register} />
+        <Route path="/wylogowano" component={Logout} />
+        <Route path="/oddaj-rzeczy" />
         <Route component={NotFound} />
       </Switch>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 
