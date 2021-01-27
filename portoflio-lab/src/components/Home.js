@@ -1,6 +1,7 @@
 import React from "react";
 import HomeHeader from "./HomeHeader";
 import HomeMainSection from "./HomeMainSection";
+import HomeSimpleSteps from "./HomeSimpleSteps";
 import HomeThreeColumns from "./HomeThreeColumns";
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <HomeHeader />
       <HomeMainSection />
       <HomeThreeColumns />
+      <HomeSimpleSteps />
     </>
   );
 };

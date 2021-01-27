@@ -14,8 +14,6 @@ const HomeHeader = ({ user, isLogged, setIsLogged }) => {
                 <li className="give-things">Oddaj rzeczy</li>
               </LinkTo>
               <LinkTo to="/wylogowano">
-                {" "}
-                //dodać onClick
                 <li>Wyloguj</li>
               </LinkTo>
             </>
@@ -58,4 +56,5 @@ const HomeHeader = ({ user, isLogged, setIsLogged }) => {
   );
 };
 
+//dodać onClick przy wyloguj
 export default HomeHeader;
