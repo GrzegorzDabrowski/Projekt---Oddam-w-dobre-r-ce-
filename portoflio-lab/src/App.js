@@ -1,3 +1,4 @@
+import "./App.scss";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
 import Home from "./components/Home";

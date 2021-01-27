@@ -1,0 +1,61 @@
+.header {
+  padding: 30px 20px;
+}
+
+.upper-menu,
+.bottom-menu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.upper-menu {
+  align-items: center;
+  margin-bottom: 34px;
+
+  h4 {
+    color: $color-primary;
+    font-size: 14px;
+  }
+
+  .give-things {
+    color: $color-primary;
+  }
+
+  & li {
+    color: $color-alt;
+    border: 1px solid #fff;
+    font-size: 14px;
+    padding: 9px 10px;
+  }
+
+  & li:hover {
+    border-color: $color-gold;
+  }
+
+  .login {
+    margin-right: 20px;
+  }
+}
+
+.bottom-menu {
+  & a {
+    font-size: 18px;
+    padding: 9px 19px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-right: 15px;
+  }
+
+  a:hover {
+    border-color: $color-primary;
+  }
+
+  a:last-child {
+    margin-right: 0;
+  }
+}
