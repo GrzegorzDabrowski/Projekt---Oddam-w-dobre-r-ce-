@@ -1,8 +1,8 @@
 import React from "react";
-import image from "../assets/Home-Hero-Image.jpg";
-import decoration from "../assets/Decoration.svg";
+import image from "../../../assets/Home-Hero-Image.jpg";
+import decoration from "../../../assets/Decoration.svg";
 import { Link } from "react-router-dom";
-import Button from "./Button";
+import Button from "../../elements/Button";
 
 const HomeMainSection = ({ isLogged }) => {
   return (

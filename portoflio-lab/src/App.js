@@ -1,11 +1,11 @@
 import "./App.scss";
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Route, Link, Switch, Redirect } from "react-router-dom";
-import Home from "./components/Home";
-import NotFound from "./components/NotFound";
-import Login from "./pages/Login";
-import Logout from "./pages/Logout";
-import Register from "./pages/Register";
+import Home from "./components/pages/Home/Home";
+import NotFound from "./components/pages/NotFound";
+import Login from "./components/pages/Login";
+import Logout from "./components/pages/Logout";
+import Register from "./components/pages/Register";
 
 function App() {
   const [user, setUser] = useState({});

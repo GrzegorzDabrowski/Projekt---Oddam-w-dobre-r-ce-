@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Pagination from "./Pagination";
-import Foundations from "./Foundations";
-import decoration from "../assets/Decoration.svg";
+import Pagination from "../../elements/Pagination";
+import Foundations from "../../elements/Foundations";
+import decoration from "../../../assets/Decoration.svg";
 
 const HomeWhoWeHelp = () => {
   const [foundations, setFoundations] = useState([
