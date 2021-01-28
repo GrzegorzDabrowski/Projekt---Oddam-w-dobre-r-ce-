@@ -152,7 +152,7 @@ const HomeWhoWeHelp = () => {
       <ul className="who-we-help-buttons">
         {BUTTONS.map((el, index) => {
           const classActive =
-            activeButtonIndex === index ? "activeButton" : "null";
+            activeButtonIndex === index ? "active-button" : "";
           return (
             <li className={classActive} onClick={() => changeFound(index)}>
               {el}

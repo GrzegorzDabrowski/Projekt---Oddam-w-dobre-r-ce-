@@ -112,16 +112,19 @@
 
 .active {
   display: block;
+
+  &-page {
+    border: 1px solid #707070;
+    p {
+      padding: 12px 14px;
+    }
+  }
 }
 
 .hide {
   visibility: hidden;
 }
 
-.active-page {
-  border: 1px solid #707070;
-
-  p {
-    padding: 12px 14px;
-  }
+li.active-button {
+  border: 1px solid black;
 }
