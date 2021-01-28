@@ -1,4 +1,5 @@
 import React from "react";
+import HomeAboutUs from "./HomeAboutUs";
 import HomeHeader from "./HomeHeader";
 import HomeMainSection from "./HomeMainSection";
 import HomeSimpleSteps from "./HomeSimpleSteps";
@@ -11,6 +12,7 @@ const Home = () => {
       <HomeMainSection />
       <HomeThreeColumns />
       <HomeSimpleSteps />
+      <HomeAboutUs />
     </>
   );
 };
