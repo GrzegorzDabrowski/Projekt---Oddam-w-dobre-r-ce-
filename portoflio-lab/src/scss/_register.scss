@@ -1,0 +1,86 @@
+.register-page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  height: 100%;
+
+  h1 {
+    font-size: 40px;
+    line-height: 55px;
+    letter-spacing: -0.8px;
+    color: $color-primary;
+  }
+
+  img {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+}
+
+.register-form {
+  &-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-background;
+    height: 328px;
+    width: 250px;
+    padding: 0 63px;
+
+    label {
+      font-weight: 600;
+      margin-bottom: 20px;
+      align-self: flex-start;
+
+      &:first-child {
+        margin-top: 30px;
+      }
+    }
+
+    input {
+      border: 0;
+      border-bottom: 1px solid #707070;
+      margin-bottom: 37px;
+      background: none;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &-buttons {
+    width: 504px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 40px;
+
+    button {
+      padding: 13px 15px;
+      border: 1px solid $color-primary;
+      background: none;
+      font-family: $font-base;
+      font-size: 18px;
+      font-weight: 300;
+      cursor: pointer;
+      &:focus {
+        outline: none;
+      }
+    }
+
+    h2 {
+      padding-top: 15px;
+      text-decoration: none;
+      font-family: $font-base;
+      font-size: 18px;
+      font-weight: 300;
+    }
+  }
+}
+
+.login {
+  text-decoration: none;
+  color: #000;
+}
